@@ -1,0 +1,13 @@
+decision_logs:
+  console: true
+services:
+  oci:
+    url: http://localhost:5000
+    type: oci
+bundles:
+  one:
+    service: oci
+    resource: localhost:5000/org/one:latest
+  two:
+    service: oci
+    resource: localhost:5000/org/two:latest
